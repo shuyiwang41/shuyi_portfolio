@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie's Grocery Cart - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="maggie_cart.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">Maggie's Grocery Cart</h1>
+        <p class="project-hero-subtitle">A client-centered assistive technology solution enabling independent grocery shopping participation</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>15 Weeks</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>Engineering Psychology<br>Physical Design<br>Usability Evaluation</p>
+            </div>
+            <div class="meta-item">
+                <h5>TEAM</h5>
+                <p>OT Students<br>Clinical Mentors<br>Client & Family</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>CAD Modeling<br>3D Printing (PLA)<br>RAM Mount Hardware</p>
+            </div>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./maggie/maggie_banner.jpg" alt="Maggie's Grocery Cart Hero Image">
+        </div>
+    </section>
+
+    <!-- Section 00: Overview -->
+    <section class="project-section">
+        <div class="section-number">00 →</div>
+        <h2 class="section-title">Setting the Scene</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">OVERVIEW</h5>
+            <p>Maggie's Grocery Cart Attachment is a client-centered assistive technology project designed to support independent participation in grocery shopping for a wheelchair user with complex physical needs. The design was driven by Maggie's family's request to continue using their existing grocery cart and to pursue a customizable, 3D-printed solution rather than purchasing new equipment.</p>
+            <p>The project resulted in a low-cost, removable, 3D-printed connector that allows a wheelchair and grocery cart to be safely maneuvered as a single unit.</p>
+        </div>
+    <!-- 
+        <div class="content-block">
+            <h5 class="content-label">CLIENT & CONTEXT</h5>
+            <h3>Meet Maggie</h3>
+            <p>Maggie is a 30-year-old woman with spastic quadriplegic cerebral palsy. She is non-speaking and uses a tilt-in-space wheelchair, AAC technology, and full-time caregiver support. Grocery shopping is an important instrumental activity of daily living (IADL) for Maggie, not only for functional reasons but also for social participation and autonomy.</p>
+            <p>The challenge arose because Maggie's caregivers could not safely push both her wheelchair and a grocery cart at the same time. This physical limitation created a participation barrier, preventing Maggie from actively engaging in grocery shopping with her family or peers.</p>
+        </div>
+ -->
+
+        <div class="content-block content-with-image">
+            <div class="content-text">
+                <h5 class="content-label">CLIENT & CONTEXT</h5>
+                <p>Maggie is a 30-year-old woman with spastic quadriplegic cerebral palsy. She is non-speaking and uses a tilt-in-space wheelchair, AAC technology, and full-time caregiver support. Grocery shopping is an important instrumental activity of daily living (IADL) for Maggie, not only for functional reasons but also for social participation and autonomy.</p>
+                <p>The challenge arose because Maggie's caregivers could not safely push both her wheelchair and a grocery cart at the same time. This physical limitation created a participation barrier, preventing Maggie from actively engaging in grocery shopping with her family or peers.</p>
+            </div>
+            <div class="project-image-medium">
+                <img src="./maggie/maggie.png" alt="Context Image">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PROBLEM DEFINITION</h5>
+            <p>The core problem was not a lack of motivation or support, but a <strong>mismatch between existing tools and Maggie's physical context</strong>. Standard grocery carts and wheelchairs are not designed to function together, and while commercial solutions exist, they often require purchasing a new cart or making permanent modifications.</p>
+            
+            <h4>Key Constraints:</h4>
+            <ul>
+                <li>Must work with the family's existing grocery cart</li>
+                <li>Customizable through 3D printing</li>
+                <li>Removable (not permanent modification)</li>
+                <li>Low-cost and reproducible</li>
+                <li>Tailored to Maggie's wheelchair geometry</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PROJECT GOAL</h5>
+            <h3>Enabling Participation</h3>
+            <p>Design a physical attachment that would allow a caregiver to maneuver Maggie's wheelchair and a grocery cart simultaneously as a single, integrated unit. This would enable Maggie to actively participate in grocery shopping with her mother or day program peers, reinforcing her independence and social inclusion.</p>
+        </div>
+    </section>
+
+    <!-- Section 01: Research -->
+    <section class="project-section">
+        <div class="section-number">01 →</div>
+        <h2 class="section-title">Research & Constraints</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">USER RESEARCH</h5>
+            <p>Before designing, we examined Maggie's physical setup, her wheelchair configuration, and the environments in which the device would be used.</p>
+            
+            <h4>Key Considerations:</h4>
+            <ul>
+                <li>Grocery shopping occurs weekly in local stores</li>
+                <li>Setup and removal handled by caregivers</li>
+                <li>Must account for tilt-in-space wheelchair angle</li>
+                <li>Varying cart geometries across different stores</li>
+                <li>Real-world turning forces and maneuverability</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">MARKET RESEARCH</h5>
+            <p>We conducted market research on existing wheelchair-cart solutions. Commercial options were either cart-only add-ons, expensive, or inflexible. This reinforced the need for a custom, user-specific solution rather than an off-the-shelf product.</p>
+        </div>
+
+        <div class="image-comparison-three">
+            <div class="project-image-large">
+                <img src="./maggie/market1.png" alt="Research Findings 1">
+                <p class="image-caption">Wheelchair Shopping Cart Add-On (cart only)</p>
+                <p class="image-caption">$350 from Carriage Trade Co.</p>
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/market2.png" alt="Research Findings 2">
+                <p class="image-caption">Sit & Shop (cart only)</p>
+                <p class="image-caption">$515.95 from ADCO Industries</p>
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/market3.png" alt="Research Findings 3">
+                <p class="image-caption">Wheelchair Clamp & Attachment Holder</p>
+                <p class="image-caption">$54.95 each from Mealtime Partners Inc.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">DESIGN STRATEGY</h5>
+            <p>Given the family's request to retain their existing grocery cart and their expectation of a 3D-printed solution, we pursued a custom connector rather than a commercial add-on.</p>
+            
+            <h4>Why Custom 3D Printing?</h4>
+            <ul>
+                <li>Design specifically around Maggie's wheelchair geometry</li>
+                <li>Account for real forces during turning and maneuvering</li>
+                <li>Support rapid iteration and low-cost experimentation</li>
+                <li>Enable quick dimensional adjustments based on feedback</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 02: Prototyping -->
+    <section class="project-section">
+        <div class="section-number">02 →</div>
+        <h2 class="section-title">Prototyping & Iteration</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">PROTOTYPE 1</h5>
+            <h3>Initial Testing</h3>
+            <p>The first prototype focused on validating basic geometry and attachment feasibility.</p>
+            
+            <h4>Key Learnings:</h4>
+            <ul>
+                <li>We did not have the actual cart with us to measure at this stage</li>
+                <li>Fit issues with square grocery cart</li>
+                <li>Initial angled ball joint was unnecessary</li>
+                <li>Challenge of using proxy wheelchairs that didn't match Maggie's chair</li>
+            </ul>
+        </div>
+
+        <div class="image-comparison">
+            <div class="project-image-medium">
+                <img src="./maggie/prototype1_1.png" alt="Prototype 1_1">
+                <p class="image-caption">Needed size adjustments</p>
+            </div>
+            <div class="project-image-medium">
+                <img src="./maggie/prototype1_2.png" alt="Prototype 1_2">
+                <p class="image-caption">Joint of ball does not need to be at an angle</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PROTOTYPE 2</h5>
+            <h3>Refinement & Testing</h3>
+            <p>The second prototype incorporated size adjustments, removed the ball angle, and was customized in Maggie's favorite color, purple. This version was tested directly with Maggie and provided critical insight into real-world behavior.</p>
+            
+            <h4>Critical Discovery:</h4>
+            <p>While the attachment worked well when moving straight, it <strong>popped off during turns</strong>, revealing the need for a fully enclosed design.</p>
+        </div>
+
+        <div class="image-comparison-three">
+            <div class="project-image-medium">
+                <img src="./maggie/prototype2_1.png" alt="Prototype 2_1">
+            </div>
+            <div class="project-image-medium">
+                <img src="./maggie/prototype2_2.png" alt="Prototype 2_2">
+            </div>
+            <div class="project-image-medium">
+                <img src="./maggie/prototype2_3.png" alt="Prototype 2_3">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">DESIGN EXPERIMENTS</h5>
+            <h3>Exploring Enclosure Strategies</h3>
+            <p>To address stability issues, we explored three enclosure strategies:</p>
+            
+            <div class="experiment-grid">
+                <div class="experiment-option">
+                    <h4>1. Screws & Nuts</h4>
+                    <p>Secure but difficult to manipulate</p>
+                </div>
+                <div class="experiment-option">
+                    <h4>2. Tenon-and-Mortise</h4>
+                    <p>Lacked printing precision</p>
+                </div>
+                <div class="experiment-option">
+                    <h4>3. Latch Mechanism ✓</h4>
+                    <p>Best balance of stability and ease of use</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-comparison-three">
+            <div class="project-image-large">
+                <img src="./maggie/screw.png" alt="Design Experiments_screws">
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/tenon.png" alt="Design Experiments_tenon">
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/latch.png" alt="Design Experiments_latch">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">REFINEMENTS</h5>
+            <p>We selected the latch mechanism and refined the joint structure to increase durability. To address the risk of losing small components, the pin was tethered to the device body, improving usability and transport.</p>
+        </div>
+    </section>
+
+    <!-- Section 03: Final Design -->
+    <section class="project-section">
+        <div class="section-number">03 →</div>
+        <h2 class="section-title">Final Construction</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">FABRICATION</h5>
+            <p>The final device was fabricated using PLA with 50% infill, chosen for its balance of strength and print reliability.</p>
+            
+            <h4>Process:</h4>
+            <ol>
+                <li>CAD modeling based on precise measurements</li>
+                <li>Multiple print iterations at the Bray Lab</li>
+                <li>Manual finishing to smooth edges and improve fit</li>
+            </ol>
+            
+            <p><strong>Total material cost:</strong> Approximately $40, making the solution accessible and reproducible.</p>
+        </div>
+
+
+        <div class="image-comparison-three">
+            <div class="project-image-large">
+                <img src="./maggie/final_1.png" alt="Final Design1">
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/final_2.png" alt="Final Design2">
+            </div>
+            <div class="project-image-large">
+                <img src="./maggie/final_3.png" alt="Final Design3">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">EVALUATION & FEEDBACK</h5>
+            <p>In final trials, the attachment performed reliably when moving straight and remained securely attached under force. However, caregivers reported that turning felt stiff due to the combined width and length of the wheelchair–cart system.</p>
+            
+            <div class="voiceover-block">
+                <h5 class="voiceover-label">USER FEEDBACK</h5>
+                <p>Maggie's mother described the device as <strong>effective but challenging to maneuver during turns</strong>, highlighting a key tradeoff between rigidity and flexibility.</p>
+            </div>
+        </div>
+
+        <div class="image-comparison-three">
+        <div class="project-image-medium">
+            <img src="./maggie/test_1.jpg" alt="Testing1">
+        </div>
+        <div class="project-image-medium">
+            <img src="./maggie/test_2.jpg" alt="Testing2">
+        </div>
+        <div class="project-image-medium">
+            <img src="./maggie/test_3.jpg" alt="Testing3">
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Section 04: Outcomes -->
+    <section class="project-section">
+        <div class="section-number">04 →</div>
+        <h2 class="section-title">Outcomes & Impact</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">IMPACT</h5>
+            <p>Despite limitations, the project successfully removed a major participation barrier for Maggie. The attachment enabled grocery shopping as a shared, inclusive activity rather than a task Maggie had to observe from the sidelines.</p>
+            <p>The project also demonstrated how small, well-considered physical interventions can have outsized impact on autonomy and quality of life.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">MY ROLE & LEARNING</h5>
+            <p>As the engineering psychology student on the team, I focused on translating user needs into physical design decisions and evaluating usability tradeoffs.</p>
+            
+            <h4>Key Takeaways:</h4>
+            <ul>
+                <li>Minor geometric choices can significantly affect usability, safety, and user experience</li>
+                <li>Interdisciplinary collaboration between engineering and occupational therapy is essential</li>
+                <li>Iterative prototyping with direct user feedback leads to better solutions</li>
+                <li>Real-world constraints often reveal design opportunities that theory alone cannot</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">DELIVERABLES</h5>
+            <ul>
+                <li>Custom 3D-printed wheelchair-cart connector</li>
+                <li>CAD files for reproducibility</li>
+                <li>Documentation of design process and iterations</li>
+                <li>Usability evaluation with client and caregivers</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

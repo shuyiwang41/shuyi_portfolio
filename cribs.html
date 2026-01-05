@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIBS - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cribs.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">CRIBS</h1>
+        <p class="project-hero-subtitle">Student-centered housing platform combining peer knowledge with transparent information</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>2 Days</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>UI/UX Designer<br>Research Synthesis<br>Information Architecture</p>
+            </div>
+            <div class="meta-item">
+                <h5>TEAM</h5>
+                <p>Team Project</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>Figma<br>Miro<br>FigJam</p>
+            </div>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./cribs/banner.png" alt="CRIBS Hero Image">
+        </div>
+    </section>
+
+    <!-- Section 00: Overview -->
+    <section class="project-section">
+        <div class="section-number">00 →</div>
+        <h2 class="section-title">Setting the Scene</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">CONTEXT</h5>
+            <h3>What is CRIBS?</h3>
+            <p>CRIBS is a student-centered housing platform designed to help college students (Tufts students specifically) navigate both on-campus and off-campus housing through a single, centralized experience. The platform responds to the reality that many students rely on informal, peer-driven channels to find housing, leading to fragmented information, uncertainty, and unnecessary stress.</p>
+            <p>CRIBS reframes housing search as a <strong>student-for-student system</strong>, combining verified peer knowledge, transparent information, and community connection into one streamlined workflow. The project focused on translating research insights into clear information architecture, intuitive filtering, and trust-building features.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PROBLEM CONTEXT</h5>
+            <p>Housing search is a high-stakes, time-sensitive experience for college students, yet existing tools are fragmented. According to our survey of 32 students, over <strong>75% found their current housing through non-official channels</strong>, such as friends, upperclassmen, or external platforms.</p>
+            <p>Students described difficulty understanding housing options, coordinating roommates, comparing dorms or leases, and trusting the accuracy of available information. These challenges affected both on-campus and off-campus searches, particularly for underclassmen navigating the process for the first time.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PROBLEM DEFINITION</h5>
+            <p>Tufts students struggle with housing not because of a lack of options, but because information is <strong>scattered, opaque, and poorly aligned with student workflows</strong>. Official systems provide limited transparency, while informal platforms lack structure, verification, and context.</p>
+            <p>The core design challenge was to create a platform that acknowledges how students <em>actually</em> find housing—through peers and social networks—while improving clarity, trust, and decision-making.</p>
+        </div>
+    </section>
+
+    <!-- Section 01: Research -->
+    <section class="project-section">
+        <div class="section-number">01 →</div>
+        <h2 class="section-title">Research & Insights</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">APPROACH</h5>
+            <p>We conducted a short-cycle productathon research sprint combining survey analysis and informal interviews to understand how students currently navigate housing search and where breakdowns occur. Responses highlighted confusion around available options, facilities, lease structures, and timing urgency.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">KEY FINDINGS</h5>
+            <p>Two primary personas emerged from this research:</p>
+            <ul>
+                <li><strong>Underclassmen:</strong> lack experience, struggle to form housing groups, need clearer option visibility</li>
+                <li><strong>Upperclassmen:</strong> Juggle lottery timing with off-campus search, face affordability pressure and urgency</li>
+            </ul>
+            <p>These perspectives shaped our design priorities around clarity, comparison, and peer coordination.</p>
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./cribs/research.png" alt="Research Insights">
+        </div>
+    </section>
+
+    <!-- Section 02: Design Process -->
+    <section class="project-section">
+        <div class="section-number">02 →</div>
+        <h2 class="section-title">Design Goals & Strategy</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">DESIGN GOALS</h5>
+            <p>CRIBS was designed to centralize housing information while preserving the value of peer knowledge. The platform needed to:</p>
+            <ul>
+                <li>Support both on-campus and off-campus searches</li>
+                <li>Allow students to filter based on personal needs</li>
+                <li>Reduce friction in forming housing groups</li>
+                <li>Build <strong>trust</strong> through student-submitted content, transparency in listings, and clear separation between verified information and peer contributions</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">INFORMATION ARCHITECTURE</h5>
+            <h3>System Structure</h3>
+            <p>Information architecture was a core focus of this project. We structured the platform around two primary paths—<strong>on-campus</strong> and <strong>off-campus</strong>—while maintaining a shared navigation system so users could move fluidly between options.</p>
+            <p>Each path supports filtering by relevant criteria such as year, room type, facilities, location, and lease terms. Housing pages follow a consistent structure, combining descriptions, floor plans, facilities, and student-submitted media. This consistency was intentional, reducing cognitive load and making comparisons easier.</p>
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./cribs/cribs_ia.png" alt="Information Architecture">
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">IDEATION</h5>
+            <p>Ideation allowed us to quickly sketch early interface concepts so we could explore navigation patterns and workflow possibilities before committing to visual design. Working in low fidelity helped us validate our information architecture, identify missing steps in the student journey, and align the team on how CRIBS should function at a systems level rather than jumping directly into polished screens.</p>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./cribs/ideation.png" alt="ideation">
+        </div>
+    </section>
+
+    <!-- Section 03: Key Features -->
+    <section class="project-section">
+        <div class="section-number">03 →</div>
+        <h2 class="section-title">Key Features</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">FEATURE SET</h5>
+            <p>CRIBS introduces features that directly address gaps identified in research:</p>
+            <ul>
+                <li>Tools for forming housing groups</li>
+                <li>Personalized filtering</li>
+                <li>Clear dorm and house profiles</li>
+                <li>Access to student-submitted video tours after application</li>
+                <li>Messaging and community features that support peer-to-peer connection</li>
+            </ul>
+            <p>Rather than replacing existing student networks, CRIBS formalizes and supports them within a structured, student-centered interface.</p>
+        </div>
+
+        <div class="features-row">
+            <div class="feature-item">
+                <img src="./cribs/feature_1.png" alt="Key Features1">
+            </div>
+            <div class="feature-item">
+                <img src="./cribs/feature_2.png" alt="Key Features2">
+            </div>
+            <div class="feature-item">
+                <img src="./cribs/feature_3.png" alt="Key Features3">
+            </div>
+            <div class="feature-item">
+                <img src="./cribs/feature_4.png" alt="Key Features4">
+            </div>
+            <div class="feature-item">
+                <img src="./cribs/feature_5.png" alt="Key Features5">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section 04: Outcomes -->
+    <section class="project-section">
+        <div class="section-number">04 →</div>
+        <h2 class="section-title">Market Opportunity</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">MARKET POSITIONING</h5>
+            <p>CRIBS is positioned as a complementary layer between official housing systems and informal platforms like social media or listing sites. Unlike competitors, CRIBS combines on- and off-campus options, community connection, and digestible information in one place.</p>
+            <p>Survey data and market research suggest strong opportunity for expansion beyond Tufts, particularly in dense college housing markets where off-campus living is common.</p>
+        </div>
+
+        <div class="image-comparison">
+            <div class="project-image-medium">
+                <img src="./cribs/market1.png" alt="market1">
+            </div>
+            <div class="project-image-medium">
+                <img src="./cribs/market2.png" alt="market2">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">TARGET MARKET</h5>
+            <ul>
+                <li><strong>Primary Audience:</strong> College students (ages 18-25) who are seeking off-campus housing or exploring on-campus options</li>
+                <li><strong>Secondary Audience:</strong> Transfer students and graduate students who may need support in finding housing and connecting with new communities</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">GO-TO MARKET STRATEGY</h5>
+            <ul>
+                <li>Partner with Tufts housing offices (res-life) and student organization</li>
+                <li>Leverage student networks to encourage peer recommendations</li>
+                <li>Social media: Emphasize “MTV Cribs” style room tours and humor</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 05: Outcomes -->
+    <section class="project-section">
+        <div class="section-number">05 →</div>
+        <h2 class="section-title">Outcomes & Reflection</h2>
+
+        <div class="content-block">
+            <h5 class="content-label">IMPACT</h5>
+            <p>CRIBS demonstrated that for many students, the housing problem is less about the absence of resources and more about fragmentation, uncertainty, and lack of trusted context. By reframing housing search as a socially networked decision process, the project highlighted the value of centralizing information while preserving the credibility of peer knowledge rather than replacing it.
+
+            Through our research sprint and productathon development process, we showed that clearer workflows, consistent information structure, and transparent student-driven content can reduce stress during housing selection and support more confident decision-making. The concept also revealed opportunities for universities to collaborate with students rather than operating parallel, disconnected systems..</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">MY ROLE</h5>
+            <p>As a UI/UX designer on the team, I contributed to research synthesis, persona development, information architecture, and interaction design. I focused on aligning system structure with real student behaviors and ensuring that design decisions reduced uncertainty rather than adding complexity.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">REFLECTION</h5>
+            <p>Although CRIBS was designed around student pain points at Tufts, many of its strengths and limitations come directly from that contextual grounding. Because housing systems, lottery structures, and campus cultures vary significantly between universities, some aspects of the platform — such as timing expectations and dorm categorization — are constrained to Tufts and may not translate directly to other institutions without adaptation.</p>
+            <p>Another key learning area relates to information freshness and reliability. Since CRIBS relies in part on student-submitted insights, room tours, and peer guidance, there is an inherent risk that content may become outdated over time if contributors forget to update listings or graduate. This raised questions about moderation, responsibility, and how to balance openness with data accuracy.</p>
+            <p>Rather than treating these challenges as flaws, our team approached them as system design questions. They pushed us to think about governance models, update prompts, and incentives for participation — and to recognize that student housing is not just a technical problem, but a living ecosystem shaped by social norms, time cycles, and community trust.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

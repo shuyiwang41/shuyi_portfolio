@@ -1,0 +1,132 @@
+/* =========================
+   MORE PAGE — FULL BLEED ART
+   ========================= */
+
+/* Make the whole page black */
+body.more-page {
+    background: #000;
+    color: #fff;
+  }
+  
+  /* Override global section margins from style.css */
+  body.more-page section {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  
+  /* Nav: black background + white text */
+  body.more-page nav {
+    background-color: #000 !important;
+  }
+  
+  body.more-page .logo {
+    color: #fff;
+  }
+  
+  body.more-page .nav-links a {
+    color: #fff;
+    text-decoration-color: transparent;
+  }
+  
+  body.more-page .nav-links a:hover {
+    color: #cfcfcf;
+  }
+  
+  /* Hamburger icon bars -> white */
+  body.more-page .hamburger-icon span {
+    background-color: #fff;
+  }
+  
+  /* Hamburger dropdown -> black, links white */
+  body.more-page .menu-links {
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  body.more-page .menu-links a {
+    color: #fff;
+  }
+  
+  body.more-page .menu-links a:hover {
+    color: #cfcfcf;
+  }
+
+  
+  /* Full-bleed gallery container */
+  .photo-gallery {
+    /* Remove any inherited page spacing */
+    margin: 0;
+    padding: 0;
+  
+    /* Prevent horizontal scroll if images are 100vw */
+    overflow-x: hidden;
+  }
+  
+  /* Each photo occupies full viewport width, no side margins */
+  .photo {
+    margin: 0;
+    padding: 0;
+  
+    width: 100vw;
+    /* Ensure full-bleed even if parent is constrained */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  
+    background: #000;
+  }
+  
+  /* Full-scale image behavior */
+  .photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  
+    /* Keeps images crisp and avoids tiny gaps */
+    background: #000;
+  }
+  
+  /* Optional: add subtle spacing between images (set to 0 for no gaps) */
+  .photo + .photo {
+    margin-top: 0;
+  }
+  
+  /* Optional divider for separating photo + drawing sections */
+  .divider {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    background: #000;
+  }
+  
+  .divider-title {
+    font-size: 2.2rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  /* Improve touch scrolling + rendering */
+  .photo img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  /* Mobile tweaks */
+  @media screen and (max-width: 768px) {
+    .divider {
+      padding: 3.5rem 1.25rem 1.5rem 1.25rem;
+    }
+    .divider-title {
+      font-size: 1.6rem;
+    }
+  }
+  

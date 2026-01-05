@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Experience Redesign - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">Voting Experience Redesign</h1>
+        <p class="project-hero-subtitle">Human-centered redesign of online voting interface reducing errors while improving accessibility and voter confidence</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>5 Weeks</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>UX Research<br>Interaction Design<br>Accessibility Design</p>
+            </div>
+            <div class="meta-item">
+                <h5>TEAM</h5>
+                <p>Team Project</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>Figma<br>Paper Prototyping<br>User Testing</p>
+            </div>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./vote/vote-hero.png" alt="Voting Experience Redesign Hero Image">
+        </div>
+    </section>
+
+    <!-- Section 00: Project Overview -->
+    <section class="project-section">
+        <div class="section-number">00 →</div>
+        <h2 class="section-title">Project Overview</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">OVERVIEW</h5>
+            <p>Designing the Voting Experience is a human-centered redesign of an online voting interface aimed at reducing voting errors while improving accessibility, comprehension, and voter confidence. The project responds to long-standing failures in ballot design—such as the 2000 Florida butterfly ballot—and explores how interactive systems can support informed, equitable participation without influencing political choice.</p>
+            <p>Working within the constraints of a hypothetical but secure at-home voting system, our team focused on accessibility across physical, cognitive, linguistic, and literacy differences. The final outcome is a fully interactive voting prototype that integrates accessibility controls, candidate and ballot initiative information, error-prevention interlocks, and transparency mechanisms to help voters understand what they are voting for and avoid accidental or spoiled ballots.</p>
+        </div>
+        <div class="project-image-medium">
+            <img src="./vote/overview.png" alt="Florida 2000 butterfly ballot">
+        </div>
+    </section>
+
+    <!-- Section 01: User Personas -->
+    <section class="project-section">
+        <div class="section-number">01 →</div>
+        <h2 class="section-title">User Personas</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">APPROACH</h5>
+            <p>We developed four voter personas to represent a broad range of abilities, constraints, and lived experiences. These personas guided design decisions across accessibility, information presentation, and interaction flow.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PERSONAS</h5>
+            
+            <h3>1. Educated, fluent voter</h3>
+            <p>A college-educated young adult with limited time, motivated to vote but overwhelmed by the effort required to research candidates and initiatives.</p>
+            
+            <h3>2. Voter with physical disability</h3>
+            <p>A middle-aged voter with low vision and mobility limitations who benefits from large text, high contrast, audio assistance, and reduced physical strain.</p>
+            
+            <h3>3. Voter with cognitive / reading disability</h3>
+            <p>A young working adult with dyslexia who struggles with dense text, long paragraphs, and memory load, leading to uncertainty and reduced confidence in voting choices.</p>
+            
+            <h3>4. Voter with limited reading comprehension / bilingual needs</h3>
+            <p>A working-class voter fluent in spoken English and Spanish but overwhelmed by legal and policy-heavy language, requiring simplified text, bilingual support, audio, and visual cues.</p>
+            
+            <p>Together, these personas emphasized that <strong>"normative" voters are not the majority</strong>, and that <strong>accessibility must be adaptable</strong> rather than one-size-fits-all.</p>
+        </div>
+    </section>
+
+    <!-- Section 02: Research & Testing -->
+    <section class="project-section">
+        <div class="section-number">02 →</div>
+        <h2 class="section-title">Interview & Testing Insights</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">RESEARCH APPROACH</h5>
+            <p>We conducted multiple rounds of testing with naïve users across paper prototypes, digital wireframes, and the final visual design.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">KEY INSIGHTS</h5>
+            <ul>
+                <li><strong>Accessibility controls must come first</strong> — Users consistently expected accessibility settings (language, text size, audio) before sign-in or ballot content.</li>
+                <li><strong>Too much information on one screen causes fatigue</strong> — Long, visually consistent pages led users to skim or mechanically click through ("yes, yes, yes"), even when information was helpful.</li>
+                <li><strong>Users valued information—but wanted control over it</strong> — Optional "learn more" sections improved understanding but needed clearer visual separation to avoid overload.</li>
+                <li><strong>Trust and credibility mattered deeply</strong> — Multiple users questioned where candidate information came from, prompting the addition of fact-checking explanations and visual trust signals.</li>
+                <li><strong>Error prevention increased confidence</strong> — Interlocks confirming selections and incomplete ballots reduced anxiety about making mistakes.</li>
+            </ul>
+            <p>Testing revealed a tension between informed voting and cognitive load, shaping later design iterations.</p>
+        </div>
+    </section>
+
+    <!-- Section 03: Problem Understanding -->
+    <section class="project-section">
+        <div class="section-number">03 →</div>
+        <h2 class="section-title">Problem Understanding</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">PROBLEM STATEMENT</h5>
+            <p>Through research and testing, we framed the core problem as:</p>
+            <p><strong>How might an online voting interface support informed, accessible decision-making without increasing cognitive burden or influencing political choice?</strong></p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">KEY CHALLENGES</h5>
+            <ul>
+                <li>Legal and policy language written far above average reading levels</li>
+                <li>Visual and cognitive overload from dense ballots</li>
+                <li>High error rates caused by unclear affordances and confirmation steps</li>
+                <li>Accessibility features that exist but are hidden, inconsistent, or optional add-ons</li>
+                <li>Voter mistrust around information sources and system security</li>
+            </ul>
+            <p>Our design response treated <strong>accessibility as a system-level concern</strong>, embedding it into navigation, content structure, feedback, and error prevention rather than isolating it as a settings panel.</p>
+        </div>
+    </section>
+
+    <!-- Section 04: Flow Chart -->
+    <section class="project-section">
+        <div class="section-number">04 →</div>
+        <h2 class="section-title">User Flow</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">FLOW OVERVIEW</h5>
+            <p>These diagrams illustrate the end-to-end voting process and how accessibility, information, and confirmation are integrated into the flow. Each flow emphasizes progressive disclosure, allowing voters to access deeper information without forcing it at every step.</p>
+        </div>
+
+        <div class="flow-grid">
+            <div class="flow-item">
+                <img src="./vote/registration.png" alt="Flow 1">
+                <p class="flow-caption">Entry, sign-in, and voter verification</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/accessibility.png" alt="Flow 2">
+                <p class="flow-caption">Accessibility setup (language, text, audio)</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/candidate_info.png" alt="Flow 3">
+                <p class="flow-caption">Candidate information exploration</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/ballot_ini.png" alt="Flow 4">
+                <p class="flow-caption">Ballot initiatives and candidate selection</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/home.png" alt="Flow 5">
+                <p class="flow-caption">Interlocks and error prevention</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/final.png" alt="Flow 6">
+                <p class="flow-caption">Final review and submission confirmation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 05: Prototypes -->
+    <section class="project-section">
+        <div class="section-number">05 →</div>
+        <h2 class="section-title">Prototypes</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">PAPER PROTOTYPE</h5>
+            <p>Early low-fidelity paper prototypes were used to test ballot structure, information grouping, icon usage, and confirmation logic. These revealed issues with scrolling metaphors, checkbox affordances, and visual hierarchy.</p>
+        </div>
+
+        <div class="flow-grid">
+            <div class="flow-item">
+                <img src="./vote/accessibility_p.png" alt="accessibility screen">
+                <p class="flow-caption">Accessibility Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/candi_info.png" alt="candidate info">
+                <p class="flow-caption">Candidate Information Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/ballot.png" alt="ballot screen">
+                <p class="flow-caption">Ballot Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/interlock.png" alt="Interlock Screen">
+                <p class="flow-caption">Interlock Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/submit.png" alt="Submit Vote">
+                <p class="flow-caption">Submit Vote</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/user.png" alt="interacting with Accessibility Screen">
+                <p class="flow-caption">Interacting with Accessibility Screen</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">DIGITAL WIREFRAMES</h5>
+            <p>Interactive Figma wireframes translated the paper flow into a functional system, incorporating:</p>
+            <ul>
+                <li>Simplified toggle controls</li>
+                <li>Clear tab separation for candidate types</li>
+                <li>Improved zoom and text controls</li>
+                <li>Interlock screens for incomplete ballots</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">FINAL VISUAL DESIGN</h5>
+            <p>The final prototype introduced:</p>
+            <ul>
+                <li>Two-factor authentication for fraud prevention</li>
+                <li>Progress indicators to reduce uncertainty</li>
+                <li>High-contrast color palettes and standardized legible fonts</li>
+                <li>Clear explanations of how candidate information is selected</li>
+                <li>Write-in options and improved system feedback</li>
+            </ul>
+            <p>The design balances familiarity with government ballots and modern interaction clarity to reduce learning costs while improving usability.</p>
+        </div>
+
+        <div class="flow-grid">
+            <div class="flow-item">
+                <img src="./vote/1.png" alt="accessibility screen">
+                <p class="flow-caption">Accessibility Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/2.png" alt="candidate info">
+                <p class="flow-caption">Ballot Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/3.png" alt="ballot screen">
+                <p class="flow-caption">Ballot Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/4.png" alt="Interlock Screen">
+                <p class="flow-caption">Candidate Information Screen</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/5.png" alt="Submit Vote">
+                <p class="flow-caption">Submit Vote</p>
+            </div>
+            <div class="flow-item">
+                <img src="./vote/6.png" alt="after submission">
+                <p class="flow-caption">Submission Screen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 06: Reflection -->
+    <section class="project-section">
+        <div class="section-number">06 →</div>
+        <h2 class="section-title">Reflection</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">KEY LEARNINGS</h5>
+            <p>One of the most important takeaways was recognizing <strong>voter fatigue as a design problem, not a user flaw</strong>. Even well-intentioned features can backfire if they increase cognitive load or blur task boundaries. Balancing clarity, trust, and neutrality required constant negotiation between usability, ethics, and system constraints.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">FUTURE DIRECTIONS</h5>
+            <p>If continued, I would expand testing beyond student populations, explore adaptive layouts that respond to real-time user behavior, and further examine how transparency mechanisms influence trust without biasing decisions.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

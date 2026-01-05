@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Switch Toy - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lamp.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">Mushroom Lamp</h1>
+        <p class="project-hero-subtitle">AutoCAD 3D Modeling Design</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>2 Weeks</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>3D Modeling<br>Design</p>
+            </div>
+            <div class="meta-item">
+                <h5>COURSE</h5>
+                <p>Computer Aided Design</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>AutoCAD</p>
+            </div>
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./lamp/lamp1.png" alt="lamp1">
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./lamp/lamp2.png" alt="lamp2">
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./lamp/lamp3.png" alt="lamp3">
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./lamp/lamp4.png" alt="lamp4">
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./lamp/lamp5.png" alt="lamp5">
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

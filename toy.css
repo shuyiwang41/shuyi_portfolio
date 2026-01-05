@@ -1,0 +1,374 @@
+/* PROJECT DETAIL PAGE STYLES */
+
+/* Hero Section */
+.project-hero {
+    padding: 6rem 4rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-link {
+    font-size: 0.9rem;
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: black;
+}
+
+.project-hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.project-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* Override global section sizing from style.css for case study pages */
+.project-hero,
+.project-section {
+  height: auto;
+  margin: 0 auto;        /* remove the global 0 5rem margin */
+  padding-top: 0;        /* optional: remove the global 4vh top padding */
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.meta-item h5 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: rgb(120, 120, 120);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.meta-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgb(50, 50, 50);
+}
+
+/* Project Images */
+/* Hero Banner - Full Width */
+.project-hero .project-image-large {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 350px;
+}
+
+.project-hero .project-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Regular project images */
+.project-image-large,
+.project-image-medium {
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.project-image-large img,
+.project-image-medium img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-medium {
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+/* Section Styling */
+.project-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 4rem;
+}
+
+.section-number {
+    font-size: 1rem;
+    color: rgb(180, 180, 180);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-family: "BBH Hegarty", sans-serif;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(30, 30, 30);
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    color: rgb(120, 120, 120);
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+/* Content Blocks */
+.content-block {
+    margin-bottom: 2rem;
+}
+
+/* Content with side image - text flows full width, image on right */
+.content-with-side-image {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.content-with-side-image .content-block {
+    margin-bottom: 0;
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 0px;
+    display: block;
+}
+
+/* Two-column layout for content with image */
+.content-with-image {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.content-with-image .project-image-medium img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 0px;
+    display: block;
+}
+
+/* Reverse layout - image on left, content on right */
+.content-with-image-reverse {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.content-with-image-reverse .project-image-medium img {
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
+    border-radius: 0px;
+    display: block;
+}
+
+.content-text {
+    flex: 1;
+}
+
+/* Step layout - text on left, image on right */
+.step-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-image {
+    flex: 1;
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 0px;
+    display: block;
+}
+
+.content-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: rgb(120, 120, 120);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: rgb(30, 30, 30);
+}
+
+.content-block h4 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    margin-bottom: 1.5rem;
+}
+
+.content-block ul,
+.content-block ol {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.content-block li {
+    margin-bottom: 0.8rem;
+}
+
+.content-block strong {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}
+
+/* Footer */
+.project-footer {
+    max-width: 1200px;
+    margin: 6rem auto 4rem auto;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .project-hero-title {
+        font-size: 3rem;
+    }
+    
+    .project-meta {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-hero {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    
+    .project-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .project-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .project-meta {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-section {
+        padding: 0 2rem;
+        margin: 3rem auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content-block p,
+    .content-block ul,
+    .content-block ol {
+        font-size: 1rem;
+    }
+    
+    .project-footer {
+        padding: 0 2rem;
+    }
+
+    /* Stack content and image on mobile */
+    .content-with-image {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Stack reverse layout on mobile */
+    .content-with-image-reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Stack content-with-side-image on mobile */
+    .content-with-side-image {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Stack step layouts on mobile */
+    .step-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

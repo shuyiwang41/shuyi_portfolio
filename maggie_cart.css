@@ -1,0 +1,410 @@
+/* PROJECT DETAIL PAGE STYLES - MAGGIE'S CART */
+
+/* Hero Section */
+.project-hero {
+    padding: 6rem 4rem 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-link {
+    font-size: 0.9rem;
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: black;
+}
+
+.project-hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.project-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.meta-item h5 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: rgb(120, 120, 120);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.meta-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgb(50, 50, 50);
+}
+
+/* Project Images */
+/* Hero Banner - Full Width */
+.project-hero .project-image-large {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 350px;
+}
+
+.project-hero .project-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Regular project images */
+.project-image-large,
+.project-image-medium {
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image-large img,
+.project-image-medium img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-medium {
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+/* Section Styling */
+.project-section {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 0 4rem;
+}
+
+.section-number {
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: "BBH Hegarty", sans-serif;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    color: rgb(120, 120, 120);
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+/* Content Blocks */
+.content-block {
+    margin-bottom: 4rem;
+}
+
+/* Two-column layout for content with image */
+.content-with-image {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-image {
+    flex: 1;
+}
+
+.content-image img,
+.content-with-image .project-image-medium img {
+    width: 100%;
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+
+.content-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: rgb(120, 120, 120);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.content-block h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.content-block h4 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    margin-bottom: 1.5rem;
+}
+
+.content-block ul,
+.content-block ol {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(85, 85, 85);
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.content-block li {
+    margin-bottom: 0.8rem;
+}
+
+.content-block strong {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}
+
+/* Experiment Grid - Specific to Maggie's Cart */
+.experiment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.experiment-option {
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.experiment-option h4 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+.experiment-option p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+/* Voice over effect */
+.voiceover-block {
+    background: #f3ffff;
+    border-left: 4px solid #5cffe1;
+    padding: 1.2rem 1.4rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+
+.voiceover-label {
+    color: #5cffe1;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.voiceover-block p {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Image Comparison Layout */
+.image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.image-comparison .project-image-medium img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    background: rgb(255, 255, 255);
+}
+
+.image-comparison-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.image-comparison-three .project-image-large img,
+.image-comparison-three .project-image-medium img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    background: rgb(255, 255, 255);
+}
+
+.comparison-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    background: rgb(255, 255, 255);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgb(120, 120, 120);
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+/* Footer */
+.project-footer {
+    max-width: 1200px;
+    margin: 6rem auto 4rem auto;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .project-hero-title {
+        font-size: 3rem;
+    }
+    
+    .project-meta {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .experiment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-hero {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    
+    .project-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .project-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .project-meta {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-section {
+        padding: 0 2rem;
+        margin: 4rem auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Stack content and image on mobile */
+    .content-with-image {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .content-block h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content-block p,
+    .content-block ul,
+    .content-block ol {
+        font-size: 1rem;
+    }
+    
+    .experiment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-footer {
+        padding: 0 2rem;
+    }
+
+    /* Stack comparison images on mobile */
+    .image-comparison {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Stack three-column layout on mobile */
+    .image-comparison-three {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

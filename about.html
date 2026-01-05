@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ShuYi Wang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Introduction -->
+    <section class="about-intro">
+        <div class="intro-container">
+            <div class="intro-image">
+                <img src="./assets/about_me.jpg" alt="ShuYi Wang">
+            </div>
+            <div class="intro-text">
+                <h1 class="bbh-hegarty-regular">About Me</h1>
+                <p>I am currently an engineering psychology student at Tufts University, with training in human factors, interaction design, and system-level thinking. My academic work sits at the intersection of human cognition, physical embodiment, and technological systems, with a particular focus on accessibility and inclusive design.</p>
+                <p>I am interested in how design decisions shape who is supported, who is excluded, and how much agency users are given within everyday systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./about/fun.jpg" alt="Gallery Image 8">
+                <div class="gallery-overlay">
+                    <p>🏞️</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/knit.jpg" alt="Gallery Image 1">
+                <div class="gallery-overlay">
+                    <p>🧶</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/handcraft.jpg" alt="Gallery Image 2">
+                <div class="gallery-overlay">
+                    <p>Handcrafting</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/nail.jpg" alt="Gallery Image 4">
+                <div class="gallery-overlay">
+                    <p>I'm kind of a nail-art pro, not to brag 😋</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/soldering.jpg" alt="Gallery Image 3">
+                <div class="gallery-overlay">
+                    <p>👩🏻‍🔧</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/cooking.jpg" alt="Gallery Image 5">
+                <div class="gallery-overlay">
+                    <p>Cooking</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/3d_printing.jpg" alt="Gallery Image 6">
+                <div class="gallery-overlay">
+                    <p>3D Printing</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./about/photo.jpg" alt="Gallery Image 7">
+                <div class="gallery-overlay">
+                    <p>📷</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Skills -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2 class="bbh-hegarty-regular">Skills & Tools</h2>
+            
+            <div class="skills-category">
+                <h3>Design & Research</h3>
+                <div class="skills-grid">
+                    <div class="skill-box design">Usability Testing</div>
+                    <div class="skill-box design">User Research</div>
+                    <div class="skill-box design">Information Architecture</div>
+                    <div class="skill-box design">Wireframing</div>
+                    <div class="skill-box design">Prototyping</div>
+                    <div class="skill-box design">Ergonomics & Anthropometry</div>
+                    <div class="skill-box design">Accessibility Design</div>
+                    <div class="skill-box design">Human Factors Product Design</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools & Technical</h3>
+                <div class="skills-grid">
+                    <div class="skill-box technical">Figma</div>
+                    <div class="skill-box technical">Adobe XD</div>
+                    <div class="skill-box technical">Miro</div>
+                    <div class="skill-box technical">Axure</div>
+                    <div class="skill-box technical">R</div>
+                    <div class="skill-box technical">HTML/CSS</div>
+                    <div class="skill-box technical">SQL</div>
+                    <div class="skill-box technical">Python</div>
+                    <div class="skill-box technical">C++</div>
+                    <div class="skill-box technical">CAD Software</div>
+                    <div class="skill-box technical">Lovable.dev</div>
+                    <div class="skill-box technical">v0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

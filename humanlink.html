@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumanLink - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="humanlink.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">HumanLink</h1>
+        <p class="project-hero-subtitle">Making anthropometric data accessible, trustworthy, and easy to visualize for everyone</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>15 Weeks</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>UX Research<br>System Design<br>Information Architecture</p>
+            </div>
+            <div class="meta-item">
+                <h5>TEAM</h5>
+                <p>4 Team Members</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>Figma<br>Miro<br>FigJam<br>Lovable.dev</p>
+            </div>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./assets/humanlink-hero.jpg" alt="HumanLink Hero Image">
+        </div>
+    </section>
+
+    <!-- Section 00: Overview -->
+    <section class="project-section">
+        <div class="section-number">00 →</div>
+        <h2 class="section-title">Project Overview</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">CONTEXT</h5>
+            <h3>What is HumanLink?</h3>
+            <p>HumanLink is a concept-to-MVP project that makes anthropometric (human body measurement) data easier to find, filter, trust, and visualize—especially for individuals and smaller teams who don't have access to private corporate databases. HumanLink also explores a contribution model where users can upload measurements to expand representation over time.</p>
+        </div>
+
+        <div class="content-block content-with-image">
+            <div class="content-text">
+                <h5 class="content-label">PAIN POINTS</h5>
+                <p>Anthropometric measurements shape everyday products (chairs, tools, wearables), but access to high-quality datasets is uneven. Large companies often build private, complex internal databases, while individuals, students, and smaller organizations rely on fragmented or outdated sources.</p>
+                <p>From our early framing, existing databases frequently fall short on:</p>
+                <ul>
+                    <li>Representative data</li>
+                    <li>Filtering by demographics</li>
+                    <li>Regular updates</li>
+                    <li>Clear visualization</li>
+                </ul>
+            </div>
+            <div class="project-image-medium">
+                <img src="./assets/old_data.png" alt="old_data">
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">GOALS</h5>
+            <p>HumanLink aims to be an all-encompassing, user-friendly database where users can:</p>
+            <ul>
+                <li>Find anthropometric data quickly and confidently</li>
+                <li>Filter data by relevant demographics/standards</li>
+                <li>Understand results through visualization and statistical context</li>
+                <li>Contribute data to improve representation over time</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 01: Research -->
+    <section class="project-section">
+        <div class="section-number">01 →</div>
+        <h2 class="section-title">Research Approach & Insights</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">APPROACH</h5>
+            <p>We used a qualitative, multi-user research approach to understand how different disciplines search for and apply anthropometric information.</p>
+            <ul>
+                <li><strong>Method:</strong> One-on-one interviews (in-person + Zoom) to support follow-ups and deep context</li>
+                <li><strong>Recruitment:</strong> Personal connections, cold outreach (LinkedIn), and Tufts community</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">USER INTERVIEWS</h5>
+            <h3>Who we interviewed</h3>
+            <p><strong>17 total participants</strong> across:</p>
+            <ul>
+                <li>Human Factors Engineers (HFEs)</li>
+                <li>Biomedical Engineers (BMEs)</li>
+                <li>Artists</li>
+                <li>Students (engineering + non-engineering)</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">KEY INSIGHTS</h5>
+            <p>Across disciplines, we repeatedly heard that:</p>
+            <ul>
+                <li>Private databases are often too complex and may require a gatekeeper role just to retrieve data</li>
+                <li>People without private databases often depend on standards documents, even when those sources are not representative</li>
+                <li>Users strongly prefer visual, minimally text-heavy interfaces to reduce cognitive load</li>
+                <li>Many users are excited by AI-enhanced support</li>
+                <li>There is real demand for inclusive datasets and edge-case representation</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">PERSONA</h5>
+            <h3>Riley Tran, 32 — Human Factors Engineer</h3>
+            <p>Motivated by ethical, representative design decisions; frustrated by outdated data and time-consuming access; needs clarity when communicating technical choices to stakeholders.</p>
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./assets/humanlink-persona.png" alt="Persona">
+        </div>
+    </section>
+
+    <!-- Section 02: Design Process -->
+    <section class="project-section">
+        <div class="section-number">02 →</div>
+        <h2 class="section-title">Designing the System</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">USER NEEDS → PRODUCT REQUIREMENTS</h5>
+            <p>We translated research into system requirements, including:</p>
+            <ul>
+                <li>Multi-mode search engine</li>
+                <li>AI assistant support</li>
+                <li>Minimal, no-training-required interface</li>
+                <li>Compliance with standards</li>
+                <li>Visualizations + statistics</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">INFORMATION ARCHITECTURE</h5>
+            <h3>Why IA mattered most</h3>
+            <p>Stakeholders needed a clear system blueprint before high-fidelity visuals, so IA became a primary deliverable.</p>
+            <ol>
+                <li>Individual IA drafts</li>
+                <li>Team consolidation in FigJam</li>
+                <li>Expert review</li>
+                <li>Stakeholder refinement</li>
+            </ol>
+            <p>This resulted in four IA iterations with improved structure and readability.</p>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./assets/humanlink-ia.jpg" alt="Information Architecture">
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">WIREFRAMES</h5>
+            <p>Low-fidelity wireframes helped validate flows before MVP development.</p>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./assets/humanlink-wf.png" alt="Wireframes">
+        </div>
+    </section>
+
+    <!-- Section 03: Prototype -->
+    <section class="project-section">
+        <div class="section-number">03 →</div>
+        <h2 class="section-title">Prototyping the Concept</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">APPROACH</h5>
+            <p>Originally, we planned a traditional high-fidelity prototype in Figma — but early stakeholder direction encouraged us to explore AI-assisted prototyping to generate an MVP faster.</p>
+            <p>We chose <strong>Lovable.dev</strong> because it was intuitive to edit and compatible with our IA-first workflow.</p>
+
+            <div class="voiceover-block">
+                <h5 class="voiceover-label">WHY WE PRIORITIZED IA FIRST</h5>
+                <p>
+                    We intentionally prioritized information architecture over high-fidelity prototyping at this stage. 
+                    Stakeholders needed conceptual clarity — what the system does, how users move through it, and how 
+                    measurements relate — before interface polish.
+                </p>
+                <p>
+                    Treating HumanLink as a systems-design problem shifted success criteria from visual aesthetics 
+                    to navigation legibility, terminology alignment, and overall system coherence. This also made later 
+                    prototyping more grounded, because the structure was already validated conceptually.
+                </p>
+            </div>
+
+            <h4>How we prompted effectively:</h4>
+            <ul>
+                <li>Structured IA inputs</li>
+                <li>Scope focused on functional flows over branding</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">MVP WALKTHROUGH</h5>
+            <p>These side-by-side views show how the system's information architecture and wireframes directly informed the final MVP.</p>
+            
+            <h3>Filter Search</h3>
+            <div class="image-comparison">
+                <div class="comparison-item">
+                    <img src="./humanlink/filter_ia.jpg" alt="filter search ia">
+                    <p class="image-caption">Information Architecture</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="./humanlink/filter_mvp.png" alt="filter search mvp">
+                    <p class="image-caption">MVP Implementation</p>
+                </div>
+            </div>
+            
+            <h3>Quick Search</h3>
+            <div class="image-comparison">
+                <div class="comparison-item">
+                    <img src="./humanlink/quick_ia.png" alt="quick search ia">
+                    <p class="image-caption">Information Architecture</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="./humanlink/quick_mvp.png" alt="quick search mvp">
+                    <p class="image-caption">MVP Implementation</p>
+                </div>
+            </div>
+    
+            <h3>Data Repository</h3>
+            <div class="image-comparison">
+                <div class="comparison-item">
+                    <img src="./humanlink/repository_ia.jpg" alt="repository">
+                    <p class="image-caption">Information Architecture</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="./humanlink/repository_mvp.png" alt="repository">
+                    <p class="image-caption">MVP Implementation</p>
+                </div>
+            </div>
+
+            <h3>Add Relations Function</h3>
+            <div class="image-comparison-three">
+                <div class="comparison-item">
+                    <img src="./humanlink/add_ia.jpg" alt="add relations ia">
+                    <p class="image-caption">Information Architecture</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="./humanlink/add_wf.png" alt="add relations wireframe">
+                    <p class="image-caption">Wireframe</p>
+                </div>
+                <div class="comparison-item">
+                    <img src="./humanlink/add_mvp.png" alt="add relations mvp">
+                    <p class="image-caption">MVP Implementation</p>
+                </div>
+            </div>
+
+            <h3>Upload Measurements</h3>
+            <div class="project-image-medium">
+                <img src="./humanlink/upload.png" alt="upload measurements">
+            </div>
+        </div>
+        
+
+
+    </section>
+
+    <!-- Section 04: Outcomes -->
+    <section class="project-section">
+        <div class="section-number">04 →</div>
+        <h2 class="section-title">Outcomes & Impact</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">DELIVERABLES</h5>
+            <ul>
+                <li>17 participant interviews</li>
+                <li>Multi-iteration IA</li>
+                <li>Wireframes aligned to accessibility and cognitive load principles</li>
+                <li>MVP prototype</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">IMPACTS</h5>
+            <p>HumanLink produced a validated system concept and MVP that improves how designers and engineers search, interpret, and apply anthropometric data. Through 17 interviews and multiple IA iterations, we learned that barriers to data use are often structural rather than purely technical access.
+
+                    The final design improves legibility, supports demographic transparency, and helps users reason about when a dataset is or isn't appropriate to apply.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">FUTURE DIRECTIONS</h5>
+            <p>Going forward, the next stage of HumanLink would focus on moving from conceptual validation to technical and data oriented feasibility. This includes building a lightweight backend and dataset infrastructure to support real user accounts, version control, and metadata transparency, as well as seeding an initial repository of measurements to evaluate how the system performs with live data instead of placeholder content. We would also explore partnerships with academic labs, professional human factors communities, and design education programs to source ethically contextualized datasets and strengthen trust in the platform’s contribution model. Finally, structured usability testing, with attention to interpretability, filter behavior, and user confidence in decision making, would help refine how HumanLink communicates uncertainty and supports responsible use of anthropometric data in practice.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

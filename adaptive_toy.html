@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Switch Toy - Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toy.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular" onclick="location.href='./index.html'" style="cursor: pointer;">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <a href="./projects.html" class="back-link">← BACK</a>
+        <h1 class="project-hero-title">Adaptive Switch Toy</h1>
+        <p class="project-hero-subtitle">Hardware modification enabling accessible play through external switch activation</p>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h5>TIMELINE</h5>
+                <p>4 Weeks</p>
+            </div>
+            <div class="meta-item">
+                <h5>ROLE</h5>
+                <p>Hardware Modification<br>Accessibility Design</p>
+            </div>
+            <div class="meta-item">
+                <h5>COURSE</h5>
+                <p>Assistive Technology</p>
+            </div>
+            <div class="meta-item">
+                <h5>TOOLS</h5>
+                <p>Soldering<br>Circuit Testing<br>Precision Tools</p>
+            </div>
+        </div>
+
+        <div class="project-image-large">
+            <img src="./toy/toy.jpg" alt="Adaptive Switch Toy Hero Image">
+        </div>
+    </section>
+
+    <!-- Section 00: Context & Motivation -->
+    <section class="project-section">
+        <div class="section-number">00 →</div>
+        <h2 class="section-title">Context & Motivation</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">BACKGROUND</h5>
+            <p>Many commercially available toys require fine motor control, precise finger movements, or sustained grip strength—capabilities that are not accessible to all children. For children with motor impairments, these design assumptions can turn play into a frustrating or fully inaccessible experience, limiting opportunities for independent exploration and engagement.</p>
+            <p>Adaptive switch toys are a common intervention in assistive technology, allowing a single, large, low-force button to control toy activation. This project was completed as part of an Assistive Technology course, where our goal was to modify an existing toy so it could be operated using an external adaptive switch that is easier to press and more forgiving in terms of movement precision.</p>
+        </div>
+        
+    </section>
+
+    <!-- Section 01: Users & Accessibility Needs -->
+    <section class="project-section">
+        <div class="section-number">01 →</div>
+        <h2 class="section-title">Users & Accessibility Needs</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">WHO IS THIS FOR?</h5>
+            <p>This adaptation is designed for children who experience difficulty with conventional toy interfaces, including:</p>
+            <ul>
+                <li>Children with <strong>cerebral palsy</strong> who have limited fine motor control or involuntary movements</li>
+                <li>Children with <strong>muscular dystrophy or low muscle tone</strong>, who cannot apply sustained pressure to small buttons</li>
+                <li>Children with <strong>spinal cord injuries or limited hand mobility</strong></li>
+                <li>Children with <strong>developmental motor delays</strong>, who benefit from large, high-contrast, low-force inputs</li>
+            </ul>
+            <p>For these users, a large adaptive button switch allows activation using a broader range of motions, such as pressing with the palm, forearm, elbow, or even the head.</p>
+        </div>
+    </section>
+
+    <!-- Section 02: Design Goal -->
+    <section class="project-section">
+        <div class="section-number">02 →</div>
+        <h2 class="section-title">Design Goal</h2>
+        
+        <div class="content-with-side-image">
+            <div class="content-block">
+                <h5 class="content-label">DESIGN INTENT</h5>
+                <p>The goal of this project was to adapt an existing toy so that:</p>
+                <ul>
+                    <li>The toy can be activated using a large external switch</li>
+                    <li>Minimal force is required to trigger the toy</li>
+                    <li>The modification is durable, safe, and reversible</li>
+                    <li>The toy remains visually and functionally intact after modification</li>
+                </ul>
+                <p>We selected a <strong>Dream Rotating Projection Lamp</strong>, a toy that provides visual stimulation through light and motion, making it especially engaging for children with limited mobility.</p>
+            </div>
+            <div class="side-image">
+                <img src="./toy/original.jpg" alt="Original Projection Lamp">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 03: Technical Approach -->
+    <section class="project-section">
+        <div class="section-number">03 →</div>
+        <h2 class="section-title">Technical Approach</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">UNDERSTANDING THE TOY</h5>
+            <p>We began by disassembling the projection lamp to understand its internal structure, identifying:</p>
+            <ul>
+                <li>The power source and control board</li>
+                <li>The original on/off switch</li>
+                <li>Contact points responsible for activating the motor and light</li>
+            </ul>
+            <p>By mapping the existing circuitry, we identified where an external switch could be introduced without interfering with the toy's core functionality.</p>
+        </div>
+
+        <div class="content-block">
+            <h5 class="content-label">HARDWARE MODIFICATION PROCESS</h5>
+            
+            <div class="step-layout">
+                <div class="step-content">
+                    <h3>1. Opening the Toy</h3>
+                    <p>The lamp casing was carefully opened using precision tools to avoid damaging the plastic shell or internal components.</p>
+                </div>
+                <div class="step-image">
+                    <img src="./toy/open.jpg" alt="opening the toy">
+                </div>
+            </div>
+
+            <div class="step-layout">
+                <div class="step-content">
+                    <h3>2. Identifying the Electrical Connections</h3>
+                    <p>After opening the projection lamp, we needed to determine <strong>which wires and contact points controlled the toy's activation</strong>. Because the internal components were not labeled, we identified the correct connection points through direct testing.</p>
+                    <p>By briefly touching the exposed wire leads to different points on the circuit board, we observed when the light and rotation were triggered. This hands-on testing allowed us to quickly identify the two points that completed the circuit and activated the toy. Once these points were confirmed, they became the locations where the adaptive switch would later be connected.</p>
+                </div>
+                <div class="step-image">
+                    <img src="./toy/identify.jpg" alt="identify the connection">
+                </div>
+            </div>
+
+            <div class="step-layout">
+                <div class="step-content">
+                    <h3>3. Creating an External Interface</h3>
+                    <p>We drilled a small opening in the lamp's outer shell to allow the adaptive switch wire to exit cleanly. The hole placement was chosen to:</p>
+                    <ul>
+                        <li>Avoid internal components</li>
+                        <li>Minimize strain on the wire</li>
+                        <li>Preserve the toy's balance and appearance</li>
+                    </ul>
+                </div>
+                <div class="step-image">
+                    <img src="./toy/drill.jpg" alt="drill">
+                </div>
+            </div>
+            
+            <div class="step-layout">
+                <div class="step-content">
+                    <h3>4. Soldering the Adaptive Switch</h3>
+                    <p>We soldered the adaptive switch wires directly to the control board at the same contact points used by the original activation mechanism. This allowed the external switch to function in parallel with the toy's internal circuitry.</p>
+                    <p>Key considerations included:</p>
+                    <ul>
+                        <li>Ensuring solid solder joints to prevent intermittent activation</li>
+                        <li>Using heat shrink tubing to insulate exposed connections</li>
+                        <li>Securing wires internally to reduce stress and movement</li>
+                    </ul>
+                </div>
+                <div class="step-image">
+                    <img src="./toy/soldering.jpg" alt="soldering">
+                </div>
+            </div>
+            
+            <div class="step-layout">
+                <div class="step-content">
+                    <h3>5. Reassembly & Testing</h3>
+                    <p>After confirming electrical continuity and correct behavior, the lamp was reassembled. The adaptive switch was tested for:</p>
+                    <ul>
+                        <li>Activation reliability</li>
+                        <li>Required force</li>
+                        <li>Responsiveness across repeated presses</li>
+                    </ul>
+                </div>
+                <div class="step-image">
+                    <img src="./toy/test.jpg" alt="testing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04: Outcome -->
+    <section class="project-section">
+        <div class="section-number">04 →</div>
+        <h2 class="section-title">Outcome</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">FINAL RESULT</h5>
+            <p>The adapted projection lamp can now be activated using a large, accessible button switch, enabling children with limited motor control to independently control the toy's light and motion. The modification preserved the toy's original function while significantly lowering the physical and cognitive barriers to interaction.</p>
+        </div>
+
+        <div class="project-image-medium">
+            <img src="./toy/final.jpg" alt="Final Adapted Toy">
+        </div>
+    </section>
+
+    <!-- Section 05: Reflection & Learning -->
+    <section class="project-section">
+        <div class="section-number">05 →</div>
+        <h2 class="section-title">Reflection & Learning</h2>
+        
+        <div class="content-block">
+            <h5 class="content-label">WHAT I LEARNED</h5>
+            <p>This project deepened my understanding of accessibility at the hardware level, highlighting how small physical design changes can have a large impact on user autonomy.</p>
+            <p>Key takeaways include:</p>
+            <ul>
+                <li>Translating user needs into electrical and mechanical design decisions</li>
+                <li>Gaining hands-on experience with soldering, circuit analysis, and enclosure modification</li>
+                <li>Appreciating the importance of durability and safety in assistive devices</li>
+                <li>Seeing how assistive technology often involves adapting existing systems, not reinventing them</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

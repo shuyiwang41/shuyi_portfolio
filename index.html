@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo bbh-hegarty-regular">ShuYi Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./more.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo bbh-hegarty-regular">ShuYi Wang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.JPG" alt="My profile picture"/>
+        </div>
+        <div class="section_text bbh-hegarty-regular">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">ShuYi Wang</h1>
+            <p class="section__text__p2">I also go by Zoe</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">Contact Info</button>    
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.jpg" alt="My LinkedIn Profile" class="icon"
+                onclick="location.href='https://linkedin.com/in/shuyi-wang-33592732b'"
+                />
+                <img src="./assets/github.png" alt="My Github Profile" class="icon"
+                onclick="location.href='https://github.com/shuyiwang41'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <div class="project-cards">
+                <!-- Project Card 1 -->
+                <div class="project-minimal" onclick="location.href='./humanlink.html'">
+                    <div class="project-number">01</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/project1_HumanLink.jpg" alt="Project 1">
+                    </div>
+                    <h3 class="project-title-minimal">HumanLink</h3>
+                    <p class="project-type-minimal">UX Research & System Design • 15 Weeks</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            A research-driven platform concept that improves access to anthropometric data through guided search and clear visualization.
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal">UX Research</span>
+                            <span class="tool-tag-minimal">IA</span>
+                            <span class="tool-tag-minimal">Wireframing</span>
+                            <span class="tool-tag-minimal orange">AI-Assisted Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-minimal" onclick="location.href='./maggie_cart.html'">
+                    <div class="project-number">02</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/cover_project2_maggie.png" alt="Project 2">
+                    </div>
+                    <h3 class="project-title-minimal">Maggie's Grocery Cart Attachment</h3>
+                    <p class="project-type-minimal">Assistive Technology • 11 Weeks</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            A client-centered AT project designing a removable 3D-printed connector that links a wheelchair and grocery cart.
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal">Prototyping & Iteration</span>
+                            <span class="tool-tag-minimal">Interdisciplinary Collaboration</span>
+                            <span class="tool-tag-minimal orange">3D printing & Modeling</span>
+                            <span class="tool-tag-minimal">Assistive Tech</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-minimal" onclick="location.href='./cribs.html'">
+                    <div class="project-number">03</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/cribs_poster.png" alt="Project 3">
+                    </div>
+                    <h3 class="project-title-minimal">CRIBS</h3>
+                    <p class="project-type-minimal">Producthon • UI & UXR & Product Strategy • 2 Days</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            A student-centered housing platform concept that centralizes on- and off-campus housing options while supporting real peer networks.
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal">UX Research</span>
+                            <span class="tool-tag-minimal">Product Strategy</span>
+                            <span class="tool-tag-minimal">IA</span>
+                            <span class="tool-tag-minimal orange">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More -->
+                <div class="project-minimal" onclick="location.href='./more.html'">
+                    <div class="project-number">MORE</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/more.jpg" alt="more">
+                    </div>
+                    <h3 class="project-title-minimal">My Artworks</h3>
+                    <p class="project-type-minimal">Photography & Drawing</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            My Artworks across three years
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal orange">Adobe Creative Suite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
+    <script src="script.js"></script>
+</body>
+</html>
