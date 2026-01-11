@@ -15,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./more.html">More</a></li>
+                <li><a href="./more.html">Artworks</a></li>
             </ul>
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <div class="menu-links">
                 <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">Artworks</a></li>
             </div>
         </div>
     </nav>
@@ -46,9 +46,6 @@
                 <button 
                     class="btn btn-color-2" 
                     onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'">Contact Info</button>    
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.jpg" alt="My LinkedIn Profile" class="icon"
@@ -126,21 +123,63 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- More -->
-                <div class="project-minimal" onclick="location.href='./more.html'">
-                    <div class="project-number">MORE</div>
+
+                <!-- Project Card 4 -->
+                <div class="project-minimal" onclick="location.href='./vote.html'">
+                    <div class="project-number">04</div>
                     <div class="project-image-minimal">
-                        <img src="./assets/more.jpg" alt="more">
+                        <img src="./assets/vote.jpg" alt="Project 4">
                     </div>
-                    <h3 class="project-title-minimal">My Artworks</h3>
-                    <p class="project-type-minimal">Photography & Drawing</p>
+                    <h3 class="project-title-minimal">Voting Interface Redesign</h3>
+                    <p class="project-type-minimal">Project Type • 5 Weeks</p>
                     <div class="project-details-minimal">
                         <p class="project-description-minimal">
-                            My Artworks across three years
+                            A systems-level redesign of the voting interface to reduce ballot errors and support accessible, informed participation.
                         </p>
                         <div class="project-tools-minimal">
-                            <span class="tool-tag-minimal orange">Adobe Creative Suite</span>
+                            <span class="tool-tag-minimal">Figma</span>
+                            <span class="tool-tag-minimal">Prototyping</span>
+                            <span class="tool-tag-minimal orange">Error Prevention</span>
+                            <span class="tool-tag-minimal orange">Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 5 -->
+                <div class="project-minimal" onclick="location.href='./adaptive_toy.html'">
+                    <div class="project-number">05</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/adaptive_toy.jpg" alt="Project 5">
+                    </div>
+                    <h3 class="project-title-minimal">Adaptive Switch Toy</h3>
+                    <p class="project-type-minimal">Assistive Technology • 1 Day</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            An assistive technology project adapting a commercial toy to support independent play for children with motor impairments through a large-button adaptive switch.
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal">Accessibility</span>
+                            <span class="tool-tag-minimal orange">Soldering</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 6 -->
+                <div class="project-minimal" onclick="location.href='./lamp.html'">
+                    <div class="project-number">06</div>
+                    <div class="project-image-minimal">
+                        <img src="./assets/lamp.jpg" alt="Project 6">
+                    </div>
+                    <h3 class="project-title-minimal">Mushroom Lamp</h3>
+                    <p class="project-type-minimal">3D Modeling • 1 Week</p>
+                    <div class="project-details-minimal">
+                        <p class="project-description-minimal">
+                            Using AutoCAD to develop a geometric table lamp that integrates multiple mushroom-shaped light sources.
+                        </p>
+                        <div class="project-tools-minimal">
+                            <span class="tool-tag-minimal">3D Modeling</span>
+                            <span class="tool-tag-minimal">Design</span>
+                            <span class="tool-tag-minimal orange">AutoCAD</span>
                         </div>
                     </div>
                 </div>
@@ -148,10 +187,22 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
-    
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-message">Thanks for stopping by!</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/shuyi-wang-33592732b" target="_blank" class="footer-social-link">
+                    <img src="./assets/linkedin.jpg" alt="LinkedIn" class="footer-icon">
+                </a>
+                <a href="https://github.com/shuyiwang41" target="_blank" class="footer-social-link">
+                    <img src="./assets/github.png" alt="GitHub" class="footer-icon">
+                </a>
+            </div>
+            <p class="footer-credit">Built and coded by ShuYi</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

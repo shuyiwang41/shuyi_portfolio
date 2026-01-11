@@ -15,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./more.html">More</a></li>
+                <li><a href="./more.html">Artworks</a></li>
             </ul>
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <div class="menu-links">
                 <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="./more.html" onclick="toggleMenu()">More</a></li>
+                <li><a href="./more.html" onclick="toggleMenu()">Artworks</a></li>
             </div>
         </div>
     </nav>
@@ -76,10 +76,13 @@
             <p>HumanLink is a concept-to-MVP project that makes anthropometric (human body measurement) data easier to find, filter, trust, and visualize—especially for individuals and smaller teams who don't have access to private corporate databases. HumanLink also explores a contribution model where users can upload measurements to expand representation over time.</p>
         </div>
 
-        <div class="content-block content-with-image">
+        <div class="content-block">
             <div class="content-text">
                 <h5 class="content-label">PAIN POINTS</h5>
-                <p>Anthropometric measurements shape everyday products (chairs, tools, wearables), but access to high-quality datasets is uneven. Large companies often build private, complex internal databases, while individuals, students, and smaller organizations rely on fragmented or outdated sources.</p>
+                <div class="project-image-large">
+                    <img src="./assets/old_data.jpg" alt="old_data">
+                </div>
+                <p>Anthropometric measurements shape everyday products (chairs, tools, wearables), but <strong>access to high-quality datasets is uneven</strong>. Large companies often build private, complex internal databases, while individuals, students, and smaller organizations rely on fragmented or outdated sources.</p>
                 <p>From our early framing, existing databases frequently fall short on:</p>
                 <ul>
                     <li>Representative data</li>
@@ -87,9 +90,6 @@
                     <li>Regular updates</li>
                     <li>Clear visualization</li>
                 </ul>
-            </div>
-            <div class="project-image-medium">
-                <img src="./assets/old_data.png" alt="old_data">
             </div>
         </div>
 
@@ -121,8 +121,7 @@
 
         <div class="content-block">
             <h5 class="content-label">USER INTERVIEWS</h5>
-            <h3>Who we interviewed</h3>
-            <p><strong>17 total participants</strong> across:</p>
+            <p>We interviewed <strong>17 total participants</strong> across:</p>
             <ul>
                 <li>Human Factors Engineers (HFEs)</li>
                 <li>Biomedical Engineers (BMEs)</li>
@@ -150,7 +149,7 @@
         </div>
 
         <div class="project-image-medium">
-            <img src="./assets/humanlink-persona.png" alt="Persona">
+            <img src="./assets/humanlink-persona.jpg" alt="Persona">
         </div>
     </section>
 
@@ -175,13 +174,13 @@
             <h5 class="content-label">INFORMATION ARCHITECTURE</h5>
             <h3>Why IA mattered most</h3>
             <p>Stakeholders needed a clear system blueprint before high-fidelity visuals, so IA became a primary deliverable.</p>
+            <p>This resulted in 4 IA iterations with improved structure and readability.</p>
             <ol>
                 <li>Individual IA drafts</li>
                 <li>Team consolidation in FigJam</li>
                 <li>Expert review</li>
                 <li>Stakeholder refinement</li>
             </ol>
-            <p>This resulted in four IA iterations with improved structure and readability.</p>
         </div>
 
         <div class="project-image-large">
@@ -209,16 +208,9 @@
             <p>We chose <strong>Lovable.dev</strong> because it was intuitive to edit and compatible with our IA-first workflow.</p>
 
             <div class="voiceover-block">
-                <h5 class="voiceover-label">WHY WE PRIORITIZED IA FIRST</h5>
+                <h5 class="voiceover-label">WHY WE USED AI</h5>
                 <p>
-                    We intentionally prioritized information architecture over high-fidelity prototyping at this stage. 
-                    Stakeholders needed conceptual clarity — what the system does, how users move through it, and how 
-                    measurements relate — before interface polish.
-                </p>
-                <p>
-                    Treating HumanLink as a systems-design problem shifted success criteria from visual aesthetics 
-                    to navigation legibility, terminology alignment, and overall system coherence. This also made later 
-                    prototyping more grounded, because the structure was already validated conceptually.
+                    We chose to use AI to <strong>rapidly translate a validated information architecture into a functional MVP</strong>, allowing us to test system logic, data relationships, and user flows without over-investing in visual polish. This approach kept the focus on structural clarity and downstream design impact, using AI as an <strong>accelerant for systems validation</strong> rather than a replacement for design judgment.
                 </p>
             </div>
 
@@ -227,6 +219,10 @@
                 <li>Structured IA inputs</li>
                 <li>Scope focused on functional flows over branding</li>
             </ul>
+        </div>
+
+        <div class="mvp-link-container">
+            <a href="https://preview--bodymetrics-ethical-canvas.lovable.app/" target="_blank" class="mvp-link-button">View Live MVP →</a>
         </div>
 
         <div class="content-block">
@@ -321,7 +317,24 @@
             <h5 class="content-label">FUTURE DIRECTIONS</h5>
             <p>Going forward, the next stage of HumanLink would focus on moving from conceptual validation to technical and data oriented feasibility. This includes building a lightweight backend and dataset infrastructure to support real user accounts, version control, and metadata transparency, as well as seeding an initial repository of measurements to evaluate how the system performs with live data instead of placeholder content. We would also explore partnerships with academic labs, professional human factors communities, and design education programs to source ethically contextualized datasets and strengthen trust in the platform’s contribution model. Finally, structured usability testing, with attention to interpretability, filter behavior, and user confidence in decision making, would help refine how HumanLink communicates uncertainty and supports responsible use of anthropometric data in practice.</p>
         </div>
+        <a href="./projects.html" class="back-link">← BACK</a>
     </section>
+
+        <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p class="footer-message">Thanks for stopping by!</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/shuyi-wang-33592732b" target="_blank" class="footer-social-link">
+                        <img src="./assets/linkedin.jpg" alt="LinkedIn" class="footer-icon">
+                    </a>
+                    <a href="https://github.com/shuyiwang41" target="_blank" class="footer-social-link">
+                        <img src="./assets/github.png" alt="GitHub" class="footer-icon">
+                    </a>
+                </div>
+                <p class="footer-credit">Built and coded by ShuYi</p>
+            </div>
+        </footer>
 
     <script src="script.js"></script>
 </body>
